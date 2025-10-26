@@ -1,4 +1,3 @@
-[index.html](https://github.com/user-attachments/files/23147121/index.html)
 <!doctype html>
 <html lang="vi">
 <head>
@@ -102,6 +101,13 @@
     <section id="gioi-thieu" class="section" aria-labelledby="gioi-title">
       <h2 id="gioi-title">Giới thiệu công ty Hưng Quế</h2>
       <p>Hưng Quế là đơn vị phân phối vật liệu xây dựng, nội thất và thiết bị điện nước. Chúng tôi cung cấp giải pháp toàn diện cho nhà thầu, chủ đầu tư và hộ gia đình.</p>
+
+      <!-- Ảnh mặt tiền công ty (ảnh số 10) -->
+      <img 
+        src="https://files.oaiusercontent.com/file-7c6b7b7f-fbfb-4c7b-9c25-8613de8b8bb2/IMG_20231001_155658.jpg"
+        alt="Mặt tiền Công ty Hưng Quế"
+        style="width:100%;max-width:700px;display:block;margin:18px auto 8px auto;border-radius:12px;box-shadow:0 4px 18px rgba(33,150,243,0.10)"
+      >
 
       <div class="video-wrapper" aria-hidden="false">
         <iframe
