@@ -1,3 +1,4 @@
+[Uploading mau5.txt…]()
 <!doctype html>
 <html lang="vi">
 <head>
@@ -8,6 +9,7 @@
     :root{
       --primary:#2196f3;         /* Màu xanh biển chủ đạo */
       --accent:#1565c0;          /* Màu xanh biển đậm */
+      --brand-red:#d32f2f;       /* Màu đỏ nổi bật cho tên công ty */
       --bg:#e3f2fd;              /* Nền xanh nhạt */
       --card:#fff;
       --muted:#5c7fa3;           /* Xanh xám nhẹ */
@@ -19,7 +21,7 @@
     body{font-family:Arial, Helvetica, sans-serif;background:var(--bg);color:var(--dark);line-height:1.5;margin:0}
     a{color:var(--accent)}
     header.site-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--card);border-bottom:1px solid #cce1ff;position:sticky;top:0;z-index:60}
-    .brand{font-weight:700;color:var(--primary);font-size:20px}
+    .brand{font-weight:700;color:var(--brand-red);font-size:22px;letter-spacing:0.5px;}
     .main-nav{display:flex;gap:10px;align-items:center}
     .nav-link{padding:8px 10px;border-radius:8px;color:var(--dark);text-decoration:none}
     .nav-link:hover,.nav-link.active{background:#e3f2fd;color:var(--accent)}
@@ -102,7 +104,7 @@
       <h2 id="gioi-title">Giới thiệu công ty Hưng Quế</h2>
       <p>Hưng Quế là đơn vị phân phối vật liệu xây dựng, nội thất và thiết bị điện nước. Chúng tôi cung cấp giải pháp toàn diện cho nhà thầu, chủ đầu tư và hộ gia đình.</p>
 
-      <!-- Ảnh mặt tiền công ty (ảnh số 10) -->
+      <!-- Ảnh mặt tiền công ty -->
       <img 
         src="https://files.oaiusercontent.com/file-7c6b7b7f-fbfb-4c7b-9c25-8613de8b8bb2/IMG_20231001_155658.jpg"
         alt="Mặt tiền Công ty Hưng Quế"
@@ -136,7 +138,6 @@
 
       <!-- Products grid -->
       <div class="cards" id="productsGrid">
-        <!-- Existing original items (0..3) -->
         <article class="card">
           <img src="https://files.oaiusercontent.com/file-90cfdb4d-924a-4a14-99b6-7c4c690e5f95/IMG_20231001_155708.jpg" alt="Tranh kính & gạch lát sàn">
           <h4>Tranh kính nghệ thuật & Gạch lát sàn</h4>
@@ -146,7 +147,6 @@
             <a class="btn" href="#lien-he">Mua hàng</a>
           </div>
         </article>
-
         <article class="card">
           <img src="https://files.oaiusercontent.com/file-2b90f7b8-3b37-425d-bcf0-3b2d9b3aa31e/IMG_20231001_155730.jpg" alt="Thiết bị chiếu sáng">
           <h4>Thiết bị chiếu sáng</h4>
@@ -156,7 +156,6 @@
             <a class="btn" href="#lien-he">Mua hàng</a>
           </div>
         </article>
-
         <article class="card">
           <img src="https://files.oaiusercontent.com/file-9e7c2a4a-7c41-48f7-8b42-6b5e6ee9e09f/IMG_20231001_155735.jpg" alt="Thiết bị vệ sinh">
           <h4>Thiết bị vệ sinh & điện nước</h4>
@@ -166,7 +165,6 @@
             <a class="btn" href="#lien-he">Mua hàng</a>
           </div>
         </article>
-
         <article class="card">
           <img src="https://files.oaiusercontent.com/file-7c6b7b7f-fbfb-4c7b-9c25-8613de8b8bb2/IMG_20231001_155658.jpg" alt="Mặt tiền showroom">
           <h4>Mặt tiền showroom</h4>
@@ -176,49 +174,7 @@
             <a class="btn" href="#lien-he">Liên hệ</a>
           </div>
         </article>
-
-        <!-- NEW: user images (16..19) added as products (indices 4..7) -->
-        <article class="card">
-          <!-- Save the provided first image as images/product-16.jpg (see notes below) -->
-          <img src="images/product-16.jpg" alt="Ảnh cửa hàng - khu thiết bị">
-          <h4>Khu thiết bị & phụ kiện</h4>
-          <p class="small">Kho trưng bày các thiết bị, phụ kiện và vật tư.</p>
-          <div style="margin-top:10px">
-            <button class="btn" data-idx="4">Xem ảnh</button>
-            <a class="btn" href="#lien-he">Mua hàng</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/product-17.jpg" alt="Ảnh showroom thiết bị">
-          <h4>Showroom thiết bị</h4>
-          <p class="small">Không gian trưng bày thiết bị điện nước, vòi, phụ kiện.</p>
-          <div style="margin-top:10px">
-            <button class="btn" data-idx="5">Xem ảnh</button>
-            <a class="btn" href="#lien-he">Mua hàng</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/product-18.jpg" alt="Khu mẫu gạch & tranh kính">
-          <h4>Khu mẫu gạch & tranh kính</h4>
-          <p class="small">Mẫu tranh kính, gạch ốp lát và sàn minh họa.</p>
-          <div style="margin-top:10px">
-            <button class="btn" data-idx="6">Xem ảnh</button>
-            <a class="btn" href="#lien-he">Mua hàng</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/product-19.jpg" alt="Thiết bị vệ sinh trưng bày">
-          <h4>Thiết bị vệ sinh trưng bày</h4>
-          <p class="small">Bồn cầu, lavabo và các phụ kiện trưng bày.</p>
-          <div style="margin-top:10px">
-            <button class="btn" data-idx="7">Xem ảnh</button>
-            <a class="btn" href="#lien-he">Mua hàng</a>
-          </div>
-        </article>
-
+        <!-- Nếu có thêm ảnh sản phẩm khác, thêm tại đây -->
       </div>
     </section>
 
@@ -281,12 +237,7 @@
         {src:"https://files.oaiusercontent.com/file-90cfdb4d-924a-4a14-99b6-7c4c690e5f95/IMG_20231001_155708.jpg", caption:"Tranh kính nghệ thuật & Gạch lát sàn"},
         {src:"https://files.oaiusercontent.com/file-2b90f7b8-3b37-425d-bcf0-3b2d9b3aa31e/IMG_20231001_155730.jpg", caption:"Thiết bị chiếu sáng"},
         {src:"https://files.oaiusercontent.com/file-9e7c2a4a-7c41-48f7-8b42-6b5e6ee9e09f/IMG_20231001_155735.jpg", caption:"Thiết bị vệ sinh & điện nước"},
-        {src:"https://files.oaiusercontent.com/file-7c6b7b7f-fbfb-4c7b-9c25-8613de8b8bb2/IMG_20231001_155658.jpg", caption:"Mặt tiền showroom Hưng Quế"},
-        // New images added for the products you provided:
-        {src:"images/product-16.jpg", caption:"Khu thiết bị & phụ kiện (ảnh 16)"},
-        {src:"images/product-17.jpg", caption:"Showroom thiết bị (ảnh 17)"},
-        {src:"images/product-18.jpg", caption:"Khu mẫu gạch & tranh kính (ảnh 18)"},
-        {src:"images/product-19.jpg", caption:"Thiết bị vệ sinh trưng bày (ảnh 19)"}
+        {src:"https://files.oaiusercontent.com/file-7c6b7b7f-fbfb-4c7b-9c25-8613de8b8bb2/IMG_20231001_155658.jpg", caption:"Mặt tiền showroom Hưng Quế"}
       ];
 
       // Lightbox handlers
